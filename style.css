@@ -163,6 +163,10 @@ footer {
     .nav-li a {
         font-size: 30px;
     }
+    .logo img {
+        width: 80%;
+        height: 80%;
+    }
 
 
 
