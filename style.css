@@ -111,7 +111,8 @@ main {
     align-content: start;
 }
 .img-item{
-    width: 200px;
+    max-width: 300px;
+    min-width: 100px;
     height: 200px;
     flex:1;
     margin:10px;
