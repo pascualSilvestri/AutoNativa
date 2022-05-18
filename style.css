@@ -117,11 +117,14 @@ main {
     margin:10px;
 }
 
+.img-item:first-child{
+    width:50%
+}
+
 .img-entre{
     object-fit: content;
     width: 100%;
     height: 100%;
-
 }
 
 .main-section-right {
