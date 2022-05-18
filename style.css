@@ -117,9 +117,7 @@ main {
     margin:10px;
 }
 
-.img-item:first-child{
-    width:50%
-}
+
 
 .img-entre{
     object-fit: content;
