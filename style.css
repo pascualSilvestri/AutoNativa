@@ -156,6 +156,7 @@ footer {
     height: 10vh;
     margin-top: 2em;
     background-color: #EB8242;
+    display: flex;
 }
 
 
