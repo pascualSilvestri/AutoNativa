@@ -174,9 +174,7 @@ footer {
     display: none;
 }
 
-.mostrar{
-    top:15vh;
-}
+
 
 @media screen and (max-width:2620px) and (min-width:1580px) {
 
@@ -317,6 +315,9 @@ footer {
     }
 
 
+}
+.mostrar{
+    top:15vh;
 }
 
 @media screen and (max-width: 850px) and (orientation: landscape){
