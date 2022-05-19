@@ -313,12 +313,13 @@ footer {
         height: 45%;
         border-radius: 10px;
     }
+    .mostrar{
+        top:15vh;
+    }
 
 
 }
-.mostrar{
-    top:15vh;
-}
+
 
 @media screen and (max-width: 850px) and (orientation: landscape){
 
