@@ -1,104 +1,161 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
 
-body{
+body {
     display: flex;
-    background-color:#f6da63;
+     background-color: #f6da63; 
     flex-direction: column;
     align-items: center;
 
 }
 
-header{
-
+header {
+    background-color: #EB8242;
+    /* background: linear-gradient(45deg, #f6f133, #f69a63); */
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    margin: px 0;
+    border-radius: 0px 0px 60px 60px;
 }
 
-.logo{
-
+.logo {
+    display: flex;
+    flex: 1;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
 }
 
-.logo img{
-    width:100%;
+.logo img {
+    width: 100%;
     height: 100%;
 }
 
 
-nav{
-    flex-grow: 4;
-    display:flex;
-
+.nav-normal {
+    flex: 4;
+    display: flex;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
 }
 
-.nav-ul{
+.nav-ul {
     width: 100%;
-    display:flex;
+    display: flex;
+}
 
+.nav-li {
+
+    flex:1;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 10px;
 
 }
 
-.nav-li{
-    width: 100%;
-   list-style-type: none;
-   display: flex;
-   justify-content: space-evenly;
-}
 
 
-
-.nav-li a{
+.nav-li a {
     color: #fff;
     text-decoration: none;
-    font-size: 20px;
-    border-top: 3px solid #f6da63;
-    padding-top: 0.5em;
+    border-top: 3px solid #EB8242;
+    font-weight: bold;
+    font-size:30px;
+    background-color: #006E7F;
+    border-radius: 20px 0px 20px 0px;
+    padding: 5px;
+    text-shadow: 0 0 5px #EB8242;
 }
 
 
-.nav-li a:hover{
-    border-bottom: 3px solid #f6da63;
-    padding-bottom:0.5em ;
+.nav-li a:hover {
+    border-bottom: 3px solid #EB8242;
     text-shadow: 0 10px 20px #f6da63;
-    color:#f6da63;
+    color: #EB8242;
+    border-radius: 20px 20px 20px 20px;
+
 }
 
 /* MAIN */
 
-main{
+main {
     display: flex;
-    flex-wrap: wrap;
     width: 95vw;
-    height: 80vh;
-    background-color: #EB8242;
+    height: auto;
+    background-color: #006E7F;
+    /* background: linear-gradient(45deg, #f6f133, #f69a63); */
     border-radius: 1em;
     margin-top: 1.5em;
     justify-content: space-around;
-    align-items:center
+    align-items: center;
+    flex-direction: column-reverse;
 }
 
-.main-section-left{
-    background-color: #f6da63;
-    width: 45%;
-    height: 90%;
+.main-section-left {
+    background-color: #EB8242;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
-
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+}
+.img-item{
+    width: 500px;
+    max-width: 500px;
+    min-width: 200px;
+    height: 200px;
+    flex:1;
+    margin:10px;
 }
 
-.main-section-right{
-    background-color: #f6da63;
-    width: 45%;
-    height: 90%;
+
+
+.img-entre{
+    border-radius:20px;
+    width: 100%;
+    height: 100%;
+}
+
+.main-section-right {
+    background-color: #EB8242;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    justify-content:center;
 }
 
-footer{
+.video-item{
+    max-width: 100%;
+    height: 100%;
+    flex:1;
+    margin:10px;
+}
+
+.video-entre{
+    width: 100%;
+    height: 100%;
+}
+
+footer {
     width: 100%;
     height: 10vh;
-    margin-top:2em;
+    margin-top: 2em;
     background-color: #EB8242;
+    display: flex;
 }
 
 
@@ -108,29 +165,177 @@ footer{
 
 /* RESPONSIVIDAD */
 
-.nav-respon{
-    display:none;
+.nav-respon {
+    display: none;
 }
-@media screen and (max-width:2620px) and (min-width:1450px){
 
-    .nav-li a{
+.btn-menu {
+    display: none;
+}
+
+
+
+@media screen and (max-width:2620px) and (min-width:1580px) {
+
+    header {
+        height: 15vh;
+    }
+    .nav-li a {
         font-size: 40px;
     }
+    .logo img {
+        width: 80%;
+        height: 40%;
+    }
+
+
+
 }
 
-@media screen and (max-width:1770px) and (min-width:1114px){
-    .nav-li a{
+@media screen and (max-width:1580px) and (min-width:1024px) {
+    .nav-li a {
         font-size: 20px;
     }
-}
 
-@media screen and (max-width:1114px) and (min-width:520px){
-
-    .logo img{
-        width:200px;
+    .logo img {
+        width: 80%;
+        height: 80%;
     }
 }
 
-@media screen and (max-width:520px) {
+@media screen and (max-width:1024px) and (min-width:768px) {
 
+    .nav-li a {
+        font-size: 15px;
+    }
+
+    .logo img {
+        width: 80%;
+        height: 80%;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    body{
+        
+    }
+    .nav-normal {
+        display: none;
+    }
+
+    header {
+        justify-content: space-between;
+        margin: 0;
+        border-radius: 0;
+        height: 15vh;
+    }
+
+    .logo {
+
+    }
+
+    .logo img {
+        width:70%;
+        height: 100%;
+        background-color: #f6da63;
+        padding: 15px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .btn-menu {
+        display: inline-flex;
+        margin: 0 20px 0 10px;
+        background-color: #f6da63;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 25px;
+        color: #EB8242;
+        cursor: pointer;
+    }
+
+    .nav-respon {
+       
+        display: flex;
+
+
+    }
+
+    .nav-ul-respon {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 10vh);
+        background-color: #EB8242;
+        top: -400vh;
+        text-align: center;
+        transition: all .4s;
+        display: flex;
+        flex-direction: column;
+        right: -0px; 
+        z-index: 100;   
+    }
+    .nav-li-respon {
+        list-style-type: none;
+        line-height: 50px;
+        margin-top: 30px;
+        border-bottom: 3px solid #f6da63;
+    }
+
+    .nav-li-respon a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-li-respon a:hover {}
+
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: auto;
+
+    }
+
+    .main-section-left {
+        background-color: #f6da63;
+        width: 90%;
+        height: 45%;
+        border-radius: 10px;
+
+    }
+
+
+
+    .main-section-right {
+        background-color: #f6da63;
+        width: 90%;
+        height: 45%;
+        border-radius: 10px;
+    }
+    .mostrar{
+        top:15vh;
+    }
+
+
+}
+
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+    header{
+        height: 35vh;
+    }
+    .mostrar{
+        top:35vh;
+    }
+
+    .nav-ul-respon {
+        overflow:scroll;  
+    }
+
+    
 }
