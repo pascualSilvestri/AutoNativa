@@ -12,14 +12,71 @@ body{
     "main,main,main",
     "footer footer footer";
 }
+/* HEADER */
 
 header{
     grid-area: "header";
     display: flex;
+    flex-direction: column;
     width: 100vw;
-    height: 10vh;
+    height: 20vh;
     background-color:#EB8242;;
 }
+
+.logo {
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 70%;
+    height: 100%;
+}
+/* NAV */
+.nav-normal {
+    display: flex;
+    width: 100vw;
+    height: 5vh;
+    align-items: center;
+    background-color: #006E7F;
+
+}
+
+.nav-ul {
+    width: 100%;
+    display: flex;
+}
+
+.nav-li {
+    flex:1;
+    list-style-type: none;
+    margin: 0 10px;
+
+}
+
+.nav-li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size:15px;
+    padding: 5px;
+    text-shadow: 0 0 5px #EB8242;
+}
+
+
+.nav-li a:hover {
+    border-bottom: 3px solid #EB8242;
+    text-shadow: 0 10px 20px #f6da63;
+    color: #EB8242;
+    border-radius: 20px 20px 20px 20px;
+
+}
+
+
+/* MAIN */
 
 main{
     grid-area: "main";
