@@ -155,7 +155,7 @@ footer{
         position: fixed;
         width: 100vw;
         height: calc(100% - 10vh);
-        background-color: #EB8242;
+        background-color: #006E7F;
         top: -400vh;
         text-align: center;
         transition: all .4s;
