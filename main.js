@@ -7,3 +7,7 @@ addEventListener('DOMContentLoaded',()=>{
         })
     }
 })
+
+$("document").ready(function(){
+
+});
