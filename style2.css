@@ -13,7 +13,9 @@ body{
     "footer footer footer";
 }
 /* HEADER */
-
+.nav-respon{
+    display:none;
+}
 header{
     grid-area: "header";
     display: flex;
@@ -39,7 +41,7 @@ header{
 .nav-normal {
     display: flex;
     width: 100vw;
-    height: 5vh;
+    height: 6vh;
     align-items: center;
     background-color: #006E7F;
 
@@ -90,4 +92,138 @@ footer{
     width: 100vw;
     height: 10vh;
     background-color:#EB8242;
+}
+
+
+
+
+
+/* RESPONSIVE */
+
+@media screen and (max-width:768px) {
+    body{
+        
+    }
+    .nav-normal {
+        display: none;
+    }
+
+    header {
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 0;
+        border-radius: 0;
+        height: 15vh;
+        align-items: center;
+    }
+
+    .logo {
+        display: flex;
+        flex:5;
+        height: 100%;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo img {
+        width:70%;
+        height: 100%;
+    }
+
+    .btn-menu {
+        display: inline-flex;
+        flex: 1;
+        margin: 0 20px 0 10px;
+        background-color: #006E7F;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 25px;
+        color: #f6da63;
+        cursor: pointer;
+    }
+
+    .nav-respon {
+       
+        display: flex;
+
+
+    }
+
+    .nav-ul-respon {
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 10vh);
+        background-color: #EB8242;
+        top: -400vh;
+        text-align: center;
+        transition: all .4s;
+        display: flex;
+        flex-direction: column;
+        right: -0px; 
+        z-index: 100;   
+    }
+    .nav-li-respon {
+        list-style-type: none;
+        line-height: 50px;
+        margin-top: 30px;
+        border-bottom: 3px solid #f6da63;
+    }
+
+    .nav-li-respon a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .nav-li-respon a:hover {}
+
+
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 90vw;
+        height: auto;
+
+    }
+
+    .main-section-left {
+        background-color: #f6da63;
+        width: 90%;
+        height: 45%;
+        border-radius: 10px;
+
+    }
+
+
+
+    .main-section-right {
+        background-color: #f6da63;
+        width: 90%;
+        height: 45%;
+        border-radius: 10px;
+    }
+    .mostrar{
+        top:15vh;
+    }
+
+
+}
+
+@media screen and (max-width: 768px) and (orientation: landscape){
+
+    header{
+        height: 35vh;
+    }
+    .mostrar{
+        top:35vh;
+    }
+
+    .nav-ul-respon {
+        overflow:scroll;  
+    }
+
+    
 }
